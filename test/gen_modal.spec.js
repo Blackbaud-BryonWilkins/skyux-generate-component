@@ -79,4 +79,26 @@ describe('Gen Modal', () => {
         });
     });
   });
+
+  describe('.generateComponentName', () => {
+    it('handles one word', () => {
+      expect(gen_modal.generateComponentName('test'))
+        .toBe('test-modal');
+    });
+
+    it('handles multiple words', () => {
+      expect(gen_modal.generateComponentName('my test'))
+        .toBe('my-test-modal');
+    });
+    
+    it('handles words with capitalized letters', () => {
+      expect(gen_modal.generateComponentName('My Test'))
+        .toBe('my-test-modal');
+    });
+
+    it('handles words that are given in component form', () => {
+      expect(gen_modal.generateComponentName('my-test'))
+        .toBe('my-test-modal');
+    });
+  });
 });

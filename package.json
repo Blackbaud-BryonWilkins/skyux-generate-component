@@ -25,5 +25,8 @@
     "jscs": "^3.0.7",
     "jshint": "^2.9.5",
     "rewire": "^2.5.2"
+  },
+  "dependencies": {
+    "promptly": "^2.2.0"
   }
 }
