@@ -1,0 +1,28 @@
+{
+  "name": "skyux-generate-component",
+  "version": "1.0.0",
+  "description": "Code generator for Skyux",
+  "main": "index.js",
+  "scripts": {
+    "jscs": "jscs bin lib",
+    "jshint": "jshint lib test",
+    "lint": "npm run jshint",
+    "test": "npm run lint && jasmine JASMINE_CONFIG_PATH=jasmine.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blackbaud-BryonWilkins/skyux-generate-component.git"
+  },
+  "author": "Blackbaud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blackbaud-BryonWilkins/skyux-generate-component/issues"
+  },
+  "homepage": "https://github.com/Blackbaud-BryonWilkins/skyux-generate-component#readme",
+  "devDependencies": {
+    "jasmine": "^2.8.0",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.5",
+    "rewire": "^2.5.2"
+  }
+}
