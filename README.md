@@ -1,1 +1,0 @@
-# skyux-generate-component
